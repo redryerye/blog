@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -45,6 +45,11 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'active_skin'
+  gem 'paperclip', '~> 4.3', '>= 4.3.6'
+  gem 'mysql2'
+  gem 'yaml_db'
+  gem 'active_admin_editor', github: 'boontdustie/active_admin_editor'
+
 
 
 end

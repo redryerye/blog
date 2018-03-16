@@ -1,21 +1,33 @@
 <!DOCTYPE html>
+<html lang="ja">
 <html>
-  <head>
-    <title>Blog</title>
-    <%= csrf_meta_tags %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <title>Fanquet</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="../assets/blog-home.css" rel="stylesheet">
 
-  </head>
+
+  <!-- Tab Logo -->
+  <link href="/assets/logo.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+
+</head>
+
+
+
 
   <body>
     <%= render 'shared/header' %>
+    <%= render 'shared/alerts' %>
     <%= yield %>
     <%= render 'shared/footer' %>
   </body>

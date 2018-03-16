@@ -1,0 +1,59 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+header {
+  font-family: Helvetica Neue;
+}
+body {
+  font-family: Helvetica Neue;
+  padding: 0;
+  margin: 0;
+
+}
+
+img {
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.lead {
+  font-family: Helvetica Neue,"ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  line-height: 1.2;
+  font-size: 100%;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+body .widen {
+  /* height: 450px; */
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+  color: #ffffff;
+  font-family: Helvetica Neue;
+}
