@@ -14,7 +14,7 @@ ActiveAdmin.register Post do
 		form :html => { :enctype => "multipart/form-data" } do |f|
 			f.inputs do
 				f.input :title
-				f.input :body, as: :html_editor
+				f.input :body
 				f.input :image, hint: f.post.image? ? image_tag(post.image.url, height: '100') : content_tag(:span, "Upload JPG/PNG/GIF image")
 			end
 			f.actions
