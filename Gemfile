@@ -45,7 +45,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'active_skin'
-  gem 'paperclip', '~> 4.3', '>= 4.3.6'
+  gem 'paperclip', '~> 5.2.0'
   gem 'mysql2'
   gem 'yaml_db'
   gem 'active_admin_editor', github: 'boontdustie/active_admin_editor'
