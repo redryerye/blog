@@ -49,6 +49,8 @@ group :development, :test do
   gem 'mysql2'
   gem 'yaml_db'
   gem 'active_admin_editor', github: 'boontdustie/active_admin_editor'
+  gem 'friendly_id'
+
 
 
 

@@ -37,7 +37,7 @@
           <%= @posts.each do |post| %>
           <!-- Blog Post -->
           <div class="card mb-4 ">
-            <a class="nav-link" href="/posts/<%= post.id %>" style="text-decoration:none; color:#000000;">
+            <a class="nav-link" href="/posts/<%= post.slug %>" style="text-decoration:none; color:#000000;">
               <img class="card-img-top" src=<%= post.image %> alt="Card image cap" height="300">
               <div class="card-body">
                 <h1 class="card-title"><%= post.title %></h1>
@@ -47,6 +47,7 @@
               </div>
               <div class="card-footer text-muted">
                   Posted <%= time_ago_in_words(post.created_at) %> ago
+
               </div>
             </a>
           </div>

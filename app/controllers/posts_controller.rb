@@ -5,7 +5,13 @@ class PostsController < ApplicationController
   end
 
   def show
-    @posts = Post.find(params[:id])
+    @post = Post.friendly.find_by!(title: params[:title])
+    # @post = Post.where(params[:id]).take!
+    # @post = current_user.posts.find(params[:id])
+
+    # Select posts
+    @entry = 'entry/' + @post.id.to_s
+
     # @posts = Post.order("created_at desc").limit(4).offset(1)
   end
 
