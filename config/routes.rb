@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  # devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :users
 
   resources :posts, param: :title
@@ -14,7 +13,6 @@ Rails.application.routes.draw do
 
   match 'about', to: 'about#index', via: 'get'
 
-  match 'posts/:id', to: 'posts#show', via: 'get'
   # match 'post#show', to: 'post#:slug', via: 'get'
 
   match 'contact', to: 'contact#index', via: 'get'

@@ -1,3 +1,4 @@
+<% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +41,7 @@
             <a class="nav-link" href="/posts/<%= post.slug %>" style="text-decoration:none; color:#000000;">
               <img class="card-img-top" src=<%= post.image %> alt="Card image cap" height="300">
               <div class="card-body">
-                <h1 class="card-title"><%= post.title %></h1>
+                <h1 class="card-title"><%= post.name %></h1>
                 <p> <%= post.body %> </p>
 
                 <!-- <a href= "/posts/<%= post.id %>" class="btn btn-primary">Read More &rarr;</a> -->

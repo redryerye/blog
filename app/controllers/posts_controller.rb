@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all.order('created_at DESC')
     # @posts = Post.all('created_at DESC')
+    @post = "Fanquet"
   end
 
   def show
@@ -11,6 +12,7 @@ class PostsController < ApplicationController
 
     # Select posts
     @entry = 'entry/' + @post.id.to_s
+
 
     # @posts = Post.order("created_at desc").limit(4).offset(1)
   end
