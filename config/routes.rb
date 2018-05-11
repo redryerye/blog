@@ -20,8 +20,4 @@ Rails.application.routes.draw do
   match 'contact/complete', to: 'contact#complete', via: 'post'
 
 
-  group :production, :staging do
-    gem 'unicorn'
-  end
-
 end
