@@ -72,4 +72,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production, :staging do
   gem 'unicorn'
   gem 'friendly_id'
+  gem 'therubyracer', platforms: :ruby
 end
