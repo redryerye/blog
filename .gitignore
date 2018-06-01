@@ -25,4 +25,4 @@
 /config/database.yml
 /config/secrets.yml
 /config/unicorn.conf.rb
-/config/initializers/devise.rb
+/public/assets/*
